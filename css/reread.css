@@ -148,3 +148,59 @@ footer {
   margin-top: 3rem;
   color: #999;
 }
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 992px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 20px;
+  }
+
+  .grid-ebooks {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  main h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-col {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .grid-ebooks {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar li {
+    font-size: 0.85em;
+    padding: 0.8rem;
+  }
+
+  main p {
+    font-size: 0.9em;
+  }
+
+  .ebook p {
+    font-size: 0.8em;
+  }
+
+  .logo-bar {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 1.8em;
+  }
+
+  .seccion-ebooks h2 {
+    font-size: 1em;
+  }
+}
