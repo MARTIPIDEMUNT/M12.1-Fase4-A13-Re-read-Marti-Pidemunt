@@ -90,6 +90,31 @@ header {
   width: 120px;
   height: auto;
 }
+/* Secció ebooks */
+.ebooks {
+  flex: 3;
+}
+.ebooks h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f57c00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.grid-ebooks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+.ebook img {
+  width: 100%;
+  height: auto;
+}
+.ebook p {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
 
 /* Barra lateral de top vendes */
 .sidebar {
