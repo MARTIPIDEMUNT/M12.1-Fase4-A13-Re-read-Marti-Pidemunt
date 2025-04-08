@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Metadatos y estilos -->
-  <!-- Define el título de la página, la codificación y los estilos CSS. -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Re-Read</title>
   <link rel="stylesheet" href="css/reread.css" />
   <style>
-    /* Estilos para mostrar/ocultar páginas. */
     .pagina { display: none; }
     .pagina.activa { display: block; }
   </style>
 </head>
 <body>
-  <!-- Cabecera con título y barra de logo -->
   <header>
-    <!-- Contiene el título principal y la barra de logo. -->
     <h1 id="titulo-pagina"> Página Re-Read</h1>
     <div class="logo-bar">Re-Read</div>
   </header>
 
+
+
   <!-- Página 1: Re-Read -->
   <div id="re-read" class="pagina activa">
     <main class="main-content content-area">
-      <!-- Mensaje principal -->
-      <!-- Sección introductoria con descripción de la página. -->
       <div class="mensaje">
         <section class="intro">
-          <!-- Título y descripción de la sección. -->
           <h2>Re-Read</h2>
           <p>
             En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos.
             Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
           </p>
         </section>
-        <!-- Navegación entre páginas -->
-        <!-- Barra de navegación para cambiar entre secciones. -->
         <nav class="nav-col">
           <a href="#" onclick="mostrarPagina('re-read', '1.1')">Re-Read</a>
           <a href="#" onclick="mostrarPagina('libros', '1.2')">Libros</a>
           <a href="#" onclick="mostrarPagina('ebooks', '1.3')">eBooks</a>
         </nav>
-        <!-- Mensajes adicionales -->
-        <!-- Mensajes destacados sobre la misión de Re-Read. -->
         <h3>Nunca la lectura ha sido tan necesaria</h3>
         <p>
           En estos tiempos difíciles Re-Read se suma al mensaje de <strong>#yomequedoencasa</strong> por el bien común de la sociedad.
@@ -56,8 +46,6 @@
         </p>
       </div>
 
-      <!-- Barra lateral con top ventas -->
-      <!-- Lista de libros más vendidos. -->
       <aside class="sidebar">
         <h3>Top ventas</h3>
         <ul>
@@ -74,8 +62,6 @@
   <!-- Página 2: Libros -->
   <div id="libros" class="pagina">
     <main class="main-content content-area">
-      <!-- Mensaje principal -->
-      <!-- Sección introductoria y descripción de precios. -->
       <div class="mensaje">
         <section class="intro">
           <h2>Re–Read</h2>
@@ -104,8 +90,6 @@
         </p>
       </div>
 
-      <!-- Barra lateral con top ventas -->
-      <!-- Lista de libros más vendidos. -->
       <aside class="sidebar">
         <h3>Top ventas</h3>
         <ul>
@@ -122,8 +106,6 @@
   <!-- Página 3: eBooks -->
   <div id="ebooks" class="pagina">
     <main class="main-content content-area">
-      <!-- Mensaje principal -->
-      <!-- Sección introductoria y lista de eBooks. -->
       <div class="mensaje">
         <section class="intro">
           <h2>Re–Read</h2>
@@ -133,7 +115,7 @@
             para que nunca te quedes sin ninguno de los dos.
           </p>
         </section>
-        <nav class="nav-col">
+<nav class="nav-col">
           <a href="#" onclick="mostrarPagina('re-read', '1.1')">Re-Read</a>
           <a href="#" onclick="mostrarPagina('libros', '1.2')">Libros</a>
           <a href="#" onclick="mostrarPagina('ebooks', '1.3')">eBooks</a>
@@ -165,8 +147,6 @@
         </section>
       </div>
 
-      <!-- Barra lateral con top ventas -->
-      <!-- Lista de libros más vendidos. -->
       <aside class="sidebar">
         <h3>Top ventas</h3>
         <ul>
@@ -181,7 +161,6 @@
   </div>
 
   <script>
-    // Función para mostrar/ocultar páginas dinámicamente.
     function mostrarPagina(id, numero) {
       const paginas = document.querySelectorAll('.pagina');
       paginas.forEach(p => p.classList.remove('activa'));
